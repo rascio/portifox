@@ -1,0 +1,63 @@
+
+/* Tip: Use "@import" to add styles instead of adding <link>'s in your
+   HTML, and volo will inline it when building for production */
+
+@import "install-button.css";
+@import "../js/lib/layouts/css/layouts.css";
+
+@import "fonts.css";
+
+/* Your styles here */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'MozTTLight', Verdana, sans-serif;
+}
+
+h1 {
+    font: 2.2rem/4.8rem "Open Sans", Sans-serif;
+}
+
+.homesub h1, .foo h1, .bar h1{
+	background-image: url(../img/logoAPC.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 1.6em;
+}
+x-view .contents {
+    padding: 1em;
+}
+
+x-view.foo {
+    background-color: #dddddd;
+}
+
+x-view .contents h1 {
+    margin: 0;
+}
+
+x-listview.list li:before {
+    content: ' ';
+    display: inline-block;
+    width: 23px;
+    height: 15px;
+    background: url(../img/glyphicons-halflings.png) no-repeat -95px -2px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.partenza{background-image: url(../img/partenzaOff.png);
+width: 160px;
+height: 27px;}
+
+.arrivo{background-image: url(../img/arrivoOff.png);
+width: 160px;
+height: 27px;}
+
+.moli{background-image: url(../img/moli.png);
+width: 160px;
+height: 27px;}
+.meteo{width: 90%; background-color:#ff0000;}
